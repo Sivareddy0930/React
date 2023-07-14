@@ -1,9 +1,10 @@
-import Cls_1 from "./Cls_1";
+
+import Fun_1 from "./Fun_1";
 function App() {
   return (
    <div>
-<Cls_1/>   
- </div>
+   <Fun_1/>
+    </div>
   );
 }
 
