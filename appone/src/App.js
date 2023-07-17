@@ -1,8 +1,8 @@
-import Cls_1 from "./Cls_1";
+import Fun from "./Fun";
 function App() {
   return (
    <div>
-<Cls_1/>   
+  <Fun />
  </div>
   );
 }
