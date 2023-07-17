@@ -1,10 +1,8 @@
-import State1 from "./State1";
-import State from "./State";
+import Cls_1 from "./Cls_1";
 function App() {
   return (
    <div>
-    <State1/>
-    <State/>
+<Cls_1/>   
  </div>
   );
 }
