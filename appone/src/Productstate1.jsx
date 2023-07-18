@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 class Productstate1 extends React.Component{
         state={
                 product1:{
@@ -17,16 +17,14 @@ class Productstate1 extends React.Component{
               //   //if we want to update qty  like this it will update whole product1 object and that contain only qty.restof the values get removed
               // }
               incr=()=>{
-
-                this.setState({product1:{...this.product1,qty:this.product1.qty +1}})
-                //if we want to update qty 
-              }
+                  this.setState({product1:{...this.state.product1,  qty:this.state.product1.qty +1}})}
               desc=()=>{
 
-                this.setState({qty:this.state.qty -1})
+                this.setState({product1:{...this.state.product1,qty:this.state.product1.qty -1}})
               }
+
     render(){
-        return <Fragment>
+        return <>
           <hr />
 
                     <nav className='navbar navbar-dark bg-dark'>
@@ -34,7 +32,6 @@ class Productstate1 extends React.Component{
                     </nav>
                     <div>
                     <p>{JSON.stringify(this.state)}</p>
-
 
                       <table className='table'>
                         <thead>
@@ -58,9 +55,9 @@ class Productstate1 extends React.Component{
                              
                     </div>
 
-            </Fragment>
+            </>
     }
-
+              
 }
 export default Productstate1;
 //Aim is to change the quantity of product by incr and desc.
