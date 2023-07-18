@@ -1,8 +1,10 @@
-import Fun from "./Fun";
+import Productstate from "./Productstate";
+import Productstate1 from "./Productstate1";
 function App() {
   return (
    <div>
-  <Fun />
+    <Productstate/>
+    <Productstate1/>
  </div>
   );
 }
