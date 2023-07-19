@@ -1,8 +1,8 @@
-import Emp1 from "./Emp1";
+import Eventbinding from './Eventbinding'
 function App() {
   return (
    <div>
-    <Emp1/>
+    <Eventbinding/>
  </div>
   );
 }
