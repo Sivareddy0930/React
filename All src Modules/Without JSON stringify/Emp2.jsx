@@ -3,11 +3,14 @@
      
     
     render(props){
-        const{w}=this.props.wish
+        const w=this.props.wish
+       //here we are converting object to variable .
+        
+       
         return <div>
              <h1>Hi</h1>
         {/* <pre>{JSON.stringify(this.props)}</pre> */}
-            <h1>Name:{this.w}</h1>
+            <h1>Name:{w}</h1>
         </div>
     }
  }
