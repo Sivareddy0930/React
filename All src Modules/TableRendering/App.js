@@ -1,8 +1,8 @@
-import Eventhandle from "./Eventhandle";
+import Tablerendring2 from "./Tablerendring2";
 function App() {
   return (
    <div>
-    <Eventhandle/>
+    <Tablerendring2/>
  </div>
   );
 }
