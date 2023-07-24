@@ -1,12 +1,11 @@
-// import Axios from "./Axios";
-import Axios2 from "./Axios2";
-import Axiosusingclass from "./Axiosusingclass";
+import Axiosclass from "./Axiosclass";
+import Lifecyclemethod from "./Lifecyclemethod";
 function App() {
   return (
    <div>
-    {/* <Axios/> */}
-    {/* <Axios2/> */}
-    <Axiosusingclass/>
+   
+    <Axiosclass/>
+    <Lifecyclemethod/>
 
  </div>
   );
