@@ -1,13 +1,8 @@
-import Demo from "./Demo";
-import Convertobject from "./Convertobject";
-
+import Comp1 from "./Comp1";
 function App() {
   return  <>
-            <Demo/>
-          <Convertobject/>
-          
-
-            </>
+            <Comp1/>
+          </>
 }
 
 export default App;
