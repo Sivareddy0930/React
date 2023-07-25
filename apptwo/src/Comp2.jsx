@@ -3,6 +3,8 @@
 
 const Comp2=(props)=>{
     return <>
+                    <h1> accessing variables and objects from another file by importing with help of props  </h1>
+                
                 <div className="container">
                         <hr />
                         <img src={props.image} alt="" /> 
