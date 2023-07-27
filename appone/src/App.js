@@ -1,11 +1,12 @@
-import Axiosclass from "./Axiosclass";
-import Lifecyclemethod from "./Lifecyclemethod";
+import Comp1 from "./Comp1";
+import Comp2 from "./Comp2";
 function App() {
   return (
    <div>
    
-    <Axiosclass/>
-    <Lifecyclemethod/>
+    <Comp1/>
+    <Comp2/>
+    
 
  </div>
   );
