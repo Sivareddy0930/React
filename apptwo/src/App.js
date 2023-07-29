@@ -1,12 +1,11 @@
 
 import Usestate from "./Usestate";
-import UsestateOne from "./UsestateOne";
-import UsestateTwo from "./UsestateTwo";
+import Usestatewithobject from "./Usestatewithobject";
+
 function App() {
   return  <>
               <Usestate/>
-              <UsestateOne/>
-              <UsestateTwo/>
+              <Usestatewithobject/>
           </>
 }
 

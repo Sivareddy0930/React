@@ -1,17 +1,31 @@
-import React from "react"
-let Usestate=()=>{
-    let [msg,changeMsg]=React.useState("hello");
+import React, { useState } from "react";
 
-        let updateMsg=()=>{
-            return changeMsg("Good Morning")
+const Usestate=()=>{
+        //useState in react is a function that which used to create a variable to store data. 
+        //data is mutable .
+        //data can be object, number ,string ,method....
+        //it has function which is used to update default data.
+        //when data get update ,the page will get re-rendered automatcally.
+        const [data,updateData]=useState(10);
+        let incr=()=>{
+            updateData(data+1)
+            
+            console.log(data);// we get clg 10 .even After clicking on plus.because here  updateData(data+1) and console.log(data) excuteing asyncronously.
+            //here Updating data is execute asyncronously.
+        }
+        let desc=()=>{
+            updateData(data-1)
         }
 
+       console.log();
+
     return <>
-            <h4>useState from Hooks Concept</h4>
-            <pre>{msg}</pre>
-            
-            <h1>Message:{msg}</h1>
-            <button onClick={updateMsg}>Click</button>
-           </>
+                <p>useState</p>
+                <button onClick={desc}>-</button>
+
+                <pre>{data}</pre>
+                
+                <button onClick={incr}>+</button>
+            </>
 }
 export default Usestate;
