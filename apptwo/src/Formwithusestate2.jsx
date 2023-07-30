@@ -23,15 +23,16 @@ let Formwithusestate2=()=>{
                             }
 
                             let stopSubmit=(submitResponse)=>{
-                                submitResponse.preventDefault();
                                 //it stops the normal form behaviour.
+                                submitResponse.preventDefault();
+                                
 
                             }
 
 
 
     return <>
-                <h1>Task6</h1>
+                <h1>Task-6</h1>
                                     {/* <p>{username}</p>
                                     <p>{email}</p>
                                     <p>{password}</p> */}
