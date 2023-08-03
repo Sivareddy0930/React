@@ -1,31 +1,28 @@
 import {useDispatch,useSelector} from "react-redux"
-import {incrAction,descAction} from "./Action"
-
-
-
+import {incrAction,decrAction} from "./action"
 
 
 let Product=()=>{
-
-    let dispatch=useDispatch();
-    
+let despatch=useDispatch();
     let incrHandler=()=>{
-        dispatch(incrAction())
-    }  
-    let descHandler=()=>{
-        dispatch(descAction())
+        despatch(incrAction())
     }
-    let data=useSelector((responseData)=>{
-            return responseData
+    let descHandler=()=>{
+        despatch(decrAction())
+        
+    }
+
+    let data=useSelector((store)=>{
+        return store;
     })
 
     return <>
-                <h1>Product</h1>
+                <h1>APP</h1>
                 <pre>{JSON.stringify(data)}</pre>
                 <h1>{data.value}</h1>
-                <button onClick={incrHandler}>Incr Product</button>
-                <button onClick={descHandler}>Desc Product</button>
-            </>
-}
+                <button onClick={incrHandler}>Increment</button>
+                <button onClick={descHandler}>Decrement</button>
 
+           </>
+}
 export default Product;

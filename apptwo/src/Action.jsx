@@ -1,11 +1,11 @@
 
-let incr="INCR"
-let desc="DESC"
+let INCR="increment"
+let DECR="decrement"
 
 let incrAction=()=>{
-    return {type:incr}
+    return {type:INCR}
 }
-let descAction=()=>{
-    return {type:desc}
+let decrAction=()=>{
+    return {type:DECR}
 }
-export {incrAction,descAction}
+export {incrAction,decrAction}
