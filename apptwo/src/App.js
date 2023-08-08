@@ -1,9 +1,9 @@
-import Filter from "./filterData/Filter";
+import FilterData from "./filterData/FilterData";
 
 function App() {
   return  <>
         
-        <Filter/>
+        <FilterData/>
 
             
             </>
