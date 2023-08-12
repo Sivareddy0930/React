@@ -1,6 +1,6 @@
 //event binding is the way to use one EventHandler(function) to all same kind of Events.these achive by using Bind() method.
 
-// The bind() is an inbuilt method in React that is used to pass the data as an argument to the function of a class based component.
+// The bind() is an inbuilt method in React that is used to pass the data as an argument to the function of a class or function based component.
 
 // Syntax:
 // this.function.bind(this,[arg1...]);
